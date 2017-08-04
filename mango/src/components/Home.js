@@ -8,18 +8,17 @@ import {
   Button,
   Alert,
   Modal,
-  TouchableHighlight
+  TouchableHighlight,
+  TextInput
 } from 'react-native';
 
 class Home extends Component {
   constructor(props){
     super (props)
     this.state = {
-      gambar: '',
-      answer: '',
-      modalVisible: false
+      name: '',
+      plant: ''
     }
-    this.Sentuh = this.Sentuh.bind(this)
     this.setModalVisible = this.setModalVisible.bind(this)
 
   }
@@ -39,7 +38,7 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Did You Have Question??? Broo!!!
+          Please Enter your Name And Plant you Want To Grow
         </Text>
             {this.state.modalVisible ?
               <TouchableHighlight onPress={() => {
@@ -47,7 +46,7 @@ class Home extends Component {
                   }}>
               <Image
                 style={{width: 100, height: 100}}
-                source={{uri: 'https://images.gr-assets.com/books/1347596568l/1861903.jpg'}}
+                source={{uri: 'http://www.rugzoom.com/images/plants/29_large_leaf_philodendron_silk_plant.jpg'}}
               />
               </TouchableHighlight>
               :
@@ -56,17 +55,27 @@ class Home extends Component {
                   }}>
               <Image
                 style={{width: 100, height: 100}}
-                source={{uri: 'http://data.whicdn.com/images/152232618/superthumb.jpg'}}
+                source={{uri: 'http://mycrobz.com/wp/wp-content/uploads/plant-care-thumb.png'}}
               />
               </TouchableHighlight>
             }
+            <TextInput
+          style={{height: 40, width: 200}}
+          value={this.state.name}
+          placeholder={'input your name'}
+          />
+          <TextInput
+            style={{height: 40, width: 200}}
+            value={this.state.plant}
+            placeholder={'input your Plant'}
+          />
         <Text style={styles.instructions}>
-          Click button below to find-up your answer
+          Click button below to grow your plant
         </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => navigate('Main')}
-            title="Find Out"
+            title="Grow"
             color="#841584"
             accessibilityLabel="Learn more about this purple button"
           />

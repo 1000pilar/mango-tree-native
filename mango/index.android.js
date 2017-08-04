@@ -5,7 +5,7 @@
  */
 //
 
-import './Navigation'
+import './src/Navigation'
 
 // import React, { Component } from 'react';
 // import {

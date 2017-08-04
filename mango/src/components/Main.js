@@ -22,6 +22,14 @@ class Main extends Component {
 
   }
 
+grow () {
+
+}
+
+harvest() {
+
+}
+
  componentWillMount(){
    console.log('inijalan');
  }
@@ -30,8 +38,19 @@ class Main extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Ini Main
+          This is {''}
         </Text>
+
+        <Image
+          source={require('../assets/4.png')}
+        />
+
+        <Button
+          onPress={() => navigate('Bye')}
+          title="Grow"
+          color="#841584"
+          accessibilityLabel="Learn more about this purple button"
+        />
       </View>
     );
   }

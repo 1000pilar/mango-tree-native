@@ -5,9 +5,9 @@ import {
   AppRegistry
 } from 'react-native';
 
-import HomeScreen from '../components/Home'
-import MainScreen from '../components/Main'
-import ByeScreen from '../components/Bye'
+import HomeScreen from './components/Home'
+import MainScreen from './components/Main'
+import ByeScreen from './components/Bye'
 
  const mango = StackNavigator({
   Home: { screen: HomeScreen },
