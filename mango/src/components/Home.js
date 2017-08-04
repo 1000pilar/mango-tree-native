@@ -6,7 +6,6 @@ import {
   View,
   Image,
   Button,
-  Alert,
   Modal,
   TouchableHighlight,
   TextInput

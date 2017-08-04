@@ -5,10 +5,7 @@ import {
   Text,
   View,
   Image,
-  Button,
-  Alert,
-  Modal,
-  TouchableHighlight
+  Button
 } from 'react-native';
 
 class Main extends Component {
@@ -42,12 +39,12 @@ harvest() {
         </Text>
 
         <Image
-          source={require('../assets/4.png')}
+          source={require('../assets/0.png')}
         />
 
         <Button
           onPress={() => navigate('Bye')}
-          title="Grow"
+          title="Harvest"
           color="#841584"
           accessibilityLabel="Learn more about this purple button"
         />
