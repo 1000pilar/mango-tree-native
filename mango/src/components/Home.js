@@ -12,6 +12,9 @@ import {
   TextInput
 } from 'react-native';
 
+import { connect } from 'react-redux'
+
+
 class Home extends Component {
   constructor(props){
     super (props)

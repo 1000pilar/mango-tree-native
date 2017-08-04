@@ -22,6 +22,14 @@ class Bye extends Component {
 
   }
 
+grow () {
+
+}
+
+harvest() {
+
+}
+
  componentWillMount(){
    console.log('inijalan');
  }
@@ -30,16 +38,15 @@ class Bye extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          You Just found Grost And He's dead'
+          You Just Found {''}
+          And He's dead
           He's old anyway
         </Text>
+
         <Image
           source={require('../assets/4.png')}
         />
-        <View>
-        <Text style={styles.welcome}>
-          Game Over
-        </Text>
+
       </View>
     );
   }
